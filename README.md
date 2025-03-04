@@ -1,12 +1,53 @@
-# React + Vite
+# Polygon Map App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React-based web application that allows users to input their name and mobile number, which is then used to dynamically adjust the map interface. The second route integrates OpenLayers, enabling users to draw, edit, and delete polygons interactively.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Route 1: User Input Form
+- A simple form with fields for **First Name** and **Mobile Number**.
+- Data is stored in state and passed to the second route.
+- On submission, navigates to the map page.
 
-## Expanding the ESLint configuration
+### Route 2: Interactive Map with OpenLayers
+- Displays a **dynamic map** that changes based on the length of the user’s name.
+- Enables users to **draw, edit, and delete polygons** on the map.
+- Provides **three control buttons**:
+  1. **Enable/Disable Drawing** mode for creating polygons.
+  2. **Enable/Disable Editing** mode for modifying polygons.
+  3. **Clear All Polygons** from the map at once.
+- Utilizes **OpenLayers** for smooth and efficient map interactions.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation & Setup
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/ani71ket/Ottermap_Aniket.git
+   cd Ottermap_Aniket
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+
+3. Start the development server:
+   ```sh
+   npm start
+   ```
+
+## Technologies Used
+- **React.js** – Frontend framework
+- **React Router** – Routing between pages
+- **OpenLayers** – Map and polygon interaction
+- **Tailwind CSS** – UI styling
+
+## Usage
+1. Enter your **name and mobile number** on the first page.
+2. Click submit to navigate to the **map page**.
+3. Use the buttons to **draw, edit, or clear polygons** on the map.
+4. The **map size adjusts dynamically** based on the length of the name.
+
+
+This project is part of a **job assignment** and demonstrates skills in React, state management, OpenLayers, and UI design.
+
