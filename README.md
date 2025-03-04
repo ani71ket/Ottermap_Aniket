@@ -33,7 +33,7 @@ This is a React-based web application that allows users to input their name and 
 
 3. Start the development server:
    ```sh
-   npm start
+   npm run dev
    ```
 
 ## Technologies Used
